@@ -10,7 +10,7 @@
 <meta property="og:title" content="ブログ｜TOHITO">
 <meta property="og:description" content="大阪・堺市三国ヶ丘のLEDエクステ専門まつげサロンTOHITOのブログ。LEDエクステの持ち、まつげケア、サロン選びのヒントをお届けします。">
 <meta property="og:url" content="https://blog.tohitoeyelash.beauty/">
-<meta name="theme-color" content="#FBF8F3">
+<meta name="theme-color" content="#332C27">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap">
 <style>
 :root{
@@ -30,12 +30,13 @@ img{max-width:100%;height:auto}
 .wrap{max-width:780px;margin:0 auto;padding:0 20px}
 .mincho{font-family:"Shippori Mincho","Zen Old Mincho",serif}
 
-header.site{background:rgba(251,248,243,.92);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:saturate(1.2) blur(8px)}
+header.site{background:rgba(51,44,39,.96);border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;z-index:10;backdrop-filter:saturate(1.2) blur(8px)}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:15px;padding-bottom:15px}
-.logo{text-decoration:none;color:var(--ink);display:block;line-height:1.25}
-.logo small{display:block;font-size:9.5px;letter-spacing:.14em;color:var(--ink-sub);font-weight:400}
-.logo b{font-family:"Shippori Mincho",serif;font-size:20px;font-weight:400;letter-spacing:.2em}
-.navlink{font-size:12.5px;text-decoration:none;color:var(--ink-sub);letter-spacing:.08em;white-space:nowrap}
+.logo{text-decoration:none;display:block;line-height:0}
+.logo img{display:block;width:150px;height:auto}
+@media(max-width:520px){.logo img{width:124px}}
+.navlink{font-size:12.5px;text-decoration:none;color:rgba(255,255,255,.72);letter-spacing:.08em;white-space:nowrap;transition:.15s}
+.navlink:hover{color:#fff}
 
 .eyebrow{text-align:center;font-size:12px;letter-spacing:.34em;color:var(--ink-faint);padding-top:46px}
 .pagetitle{
@@ -141,11 +142,11 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
 }
 @media(prefers-reduced-motion:reduce){.cards a{transition:none}.cards a:hover{transform:none}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"TOHITO Blog","url":"https://blog.tohitoeyelash.beauty/","description":"大阪・堺市三国ヶ丘のLEDエクステ専門まつげサロンTOHITOのブログ。LEDエクステの持ち、まつげケア、サロン選びのヒントをお届けします。","publisher":{"@type":"Organization","name":"TOHITO","url":"https://tohitoeyelash.beauty"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"TOHITO ブログ","url":"https://blog.tohitoeyelash.beauty/","description":"大阪・堺市三国ヶ丘のLEDエクステ専門まつげサロンTOHITOのブログ。LEDエクステの持ち、まつげケア、サロン選びのヒントをお届けします。","publisher":{"@type":"Organization","name":"TOHITO","url":"https://tohitoeyelash.beauty"}}</script>
 </head>
 <body>
 <header class="site"><div class="wrap">
-<a class="logo" href="https://tohitoeyelash.beauty"><small>eyelash salon</small><b>TOHITO</b></a>
+<a class="logo" href="https://tohitoeyelash.beauty"><img src="/logo.png" alt="eyelash salon TOHITO" width="420" height="161"></a>
 <a class="navlink" href="https://tohitoeyelash.beauty">サロンについて →</a>
 </div></header>
 <div class="wrap">
@@ -183,14 +184,11 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
 (function(){
   var btns = document.querySelectorAll('.filters button');
   var cards = document.querySelectorAll('#list > a');
-  Array.prototype.forEach.call(btns, function(b){
+  btns.forEach(function(b){
     b.addEventListener('click', function(){
-      var f = b.getAttribute('data-f') || '';
-      Array.prototype.forEach.call(btns, function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false') });
-      Array.prototype.forEach.call(cards, function(c){
-        if (!f || c.getAttribute('data-cat') === f) c.removeAttribute('hidden');
-        else c.setAttribute('hidden', '');
-      });
+      var f = b.dataset.f;
+      btns.forEach(function(x){ x.setAttribute('aria-pressed', String(x === b)) });
+      cards.forEach(function(c){ c.hidden = !!f && c.dataset.cat !== f });
     });
   });
 })();
