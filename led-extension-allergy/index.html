@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://blog.tohitoeyelash.beauty/led-extension-allergy/">
 <meta property="og:site_name" content="TOHITO">
 <meta property="og:locale" content="ja_JP">
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#332C27">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap">
@@ -62,8 +63,10 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .cards{display:grid;gap:16px}
 .cards a{
   display:block;background:var(--card);border-radius:14px;padding:22px 22px 20px;
-  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;
+  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;overflow:hidden;
 }
+.cards a.has-thumb{padding-top:0}
+.cards a .thumb{display:block;width:calc(100% + 44px);max-width:none;margin:0 -22px 18px;aspect-ratio:16/9;object-fit:cover;background:var(--wash)}
 .cards a:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(90,66,44,.1)}
 .cards a[hidden]{display:none}
 .tag{
@@ -93,6 +96,8 @@ article h1{
 }
 .byline{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:6px}
 .byline .meta{margin-top:12px}
+figure.cover{margin:26px 0 0}
+figure.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:var(--wash)}
 
 .toc{background:var(--card);border-radius:14px;box-shadow:var(--shadow);padding:22px 26px;margin:32px 0 42px}
 .toc .ttl{font-family:"Shippori Mincho",serif;font-size:14px;letter-spacing:.16em;color:var(--ink-sub);text-align:center;margin-bottom:14px}
@@ -112,6 +117,9 @@ article h1{
 .body li::marker{color:var(--accent)}
 .body strong{font-weight:700;background:linear-gradient(transparent 64%,var(--wash) 64%)}
 .body blockquote{margin:0 0 26px;padding:2px 0 2px 18px;border-left:2px solid var(--pill);color:var(--ink-sub)}
+.body figure.ph{margin:6px 0 30px}
+.body figure.ph img{display:block;width:100%;border-radius:12px;background:var(--wash)}
+.body figure.ph figcaption{font-size:12.5px;color:var(--ink-faint);text-align:center;margin-top:9px;line-height:1.7;letter-spacing:.03em}
 .tw{overflow-x:auto;margin:0 0 28px;background:var(--card);border-radius:12px;box-shadow:var(--shadow)}
 .body table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.8}
 .body th,.body td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
@@ -138,6 +146,8 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
   body{font-size:15px;line-height:1.95}
   .filters button{padding:9px 18px;font-size:13px}
   .cards a{padding:20px 18px 18px}
+  .cards a.has-thumb{padding-top:0}
+  .cards a .thumb{width:calc(100% + 36px);margin:0 -18px 16px}
   .cards .t{font-size:17px}
   .body h2{font-size:18.5px;margin-top:48px}
   .cta{padding:28px 20px}
@@ -159,6 +169,7 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <span class="tag" style="margin-top:18px;display:inline-block">まつげエクステ</span>
       <h1>LEDエクステとアレルギー｜気になるときに知っておきたいこと</h1>
       <div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年9月8日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>6分</span></div>
+      
     </div>
     <nav class="toc"><div class="ttl">目 次</div><ol><li><a href="#sec-1">まず前提：エクステで話題になる反応は「グルー」に関わることが多い</a></li><li><a href="#sec-2">LEDエクステは何が違うのか</a></li><li><a href="#sec-3">「LEDだから反応が出ない」とは言い切れない</a></li><li><a href="#sec-4">検索されがちな「光そのもの」への不安について</a></li><li><a href="#sec-5">「ある日突然」というケースがあると言われる理由</a></li><li><a href="#sec-6">気になる変化があったときに、まずすること</a></li><li><a href="#sec-7">サロン選びとカウンセリングで確認したいこと</a></li><li><a href="#sec-8">TOHITOでの考え方</a></li><li><a href="#sec-9">気になる場合は医療機関へ</a></li><li><a href="#sec-10">ご予約について</a></li></ol></nav>
     <div class="body"><p>「LEDエクステってアレルギーは大丈夫なの？」というご質問をいただくことがあります。目のすぐそばで行う施術なので、不安に思うのは自然なことです。</p><p>この記事では、LEDエクステの仕組みを整理しながら、アレルギーとの関係についてどう考えればよいかをまとめます。はじめにお伝えしておきたいのは、この記事は症状を判断するためのものではない、ということです。気になる変化があるときの相談先についても、最後に触れます。</p><h2 id="sec-1">まず前提：エクステで話題になる反応は「グルー」に関わることが多い</h2><p>まつげエクステは、自まつ毛に人工毛をグルー（専用の接着剤）で接着する施術です。エクステに関して「合わなかった」と語られる場面で話題になりやすいのは、人工毛そのものよりも、このグルーに含まれる成分との関わりだといわれています。</p><p>これはLEDエクステに限った話ではなく、まつげエクステという施術に共通する前提です。グルーアレルギー全般については<a href="/matsuge-extension-glue-allergy-symptoms/">マツエクのグルーアレルギー、症状と気になったときの対処法</a>で扱っていますので、あわせてご覧ください。</p><h2 id="sec-2">LEDエクステは何が違うのか</h2><p>LEDエクステは、専用のグルーにLEDの光を当てて硬化させる方式です。従来のグルーとの違いは、固まるまでのプロセスにあります。</p><div class="tw"><table><thead><tr><th>項目</th><th>従来のグルー</th><th>LEDエクステ</th></tr></thead><tbody><tr><td>固まる仕組み</td><td>空気中の水分に反応して徐々に硬化</td><td>LEDの光を当てて硬化</td></tr><tr><td>固まるタイミング</td><td>施術後も時間をかけて進む</td><td>施術中にその場で完了</td></tr><tr><td>施術当日の過ごし方</td><td>洗顔や入浴を控える案内が一般的</td><td>当日から通常どおり過ごせる</td></tr></tbody></table></div><p>硬化が施術中に完了するため、施術後に洗顔・入浴・運動・サウナ・プール・アイメイクを控える必要がありません。LEDエクステのメリットを整理した記事として<a href="/sakai-led-merit/">堺市でLEDエクステをするなら知っておきたい5つのメリット</a>もあります。</p><h2 id="sec-3">「LEDだから反応が出ない」とは言い切れない</h2><p>ここは正直にお伝えしたい点です。硬化の仕組みが違っても、グルーという接着剤を使うこと自体は変わりません。ですから「LEDエクステならアレルギーとは無縁」という言い方はできません。</p><p>一方で、施術中に硬化が完了するため、未硬化の成分が施術後まで残りにくいという特性はあります。ただしこれは「起きにくい」を保証するものではなく、体質や体調によって反応の出方は人それぞれです。断定的な説明をするサロンより、こうした前提を正直に説明してくれるサロンを選ぶほうが、長い目で見て安心だと思います。</p><h2 id="sec-4">検索されがちな「光そのもの」への不安について</h2><p>「LEDエクステ シミ」「LEDエクステ 髪の毛」といったキーワードで調べている方もいらっしゃいます。施術で使うLEDは、まつ毛の根元付近のグルーに短時間だけ光を当てるためのものです。とはいえ、光の影響をどう捉えるかは個人差がありますし、私たちが医学的な見解をお伝えできる立場にもありません。</p><p>不安がある場合は、予約時やカウンセリングの段階で「光を当てる時間はどのくらいか」「目はどう保護するのか」を確認しておくと、当日の心構えが変わります。質問に具体的に答えてもらえるかどうかは、サロンを見極める材料にもなります。</p><h2 id="sec-5">「ある日突然」というケースがあると言われる理由</h2><p>これまで問題なく通えていた方が、あるときから合わなくなることがあります。現場でも「もしかしてグルーアレルギー？」というテーマでご説明する機会があり、決して珍しい話ではありません。</p><p>同じ施術を続けていても、体調、季節、生活の変化などによって、体の反応は一定ではないといわれています。「前は大丈夫だったから今回も大丈夫」と考えず、そのときどきの状態で判断していくほうが安心です。</p><h2 id="sec-6">気になる変化があったときに、まずすること</h2><p>まぶたのかゆみ、赤み、腫れ、しみるような感覚、目やにが増えたなど、いつもと違う変化を感じたときは、次のように動いてください。</p><ol><li><strong>自分で無理に外そうとしない</strong>：目元を強くこすったり、自己流で取ろうとすると、かえって負担がかかります。</li><li><strong>変化の内容と時期をメモしておく</strong>：いつから、どちら側で、どんな感じか。相談時に役立ちます。</li><li><strong>施術を受けたサロンに連絡する</strong>：どんなグルーを使ったかなど、施術側の情報が必要になることがあります。</li><li><strong>医療機関に相談する</strong>：判断が必要な段階では、専門家に見てもらってください。</li></ol><p>ここで挙げた変化は、原因を特定するものではありません。似た症状でも背景はさまざまで、私たちサロンの側で「これはアレルギーです」と判断することはできません。</p><h2 id="sec-7">サロン選びとカウンセリングで確認したいこと</h2><p>不安がある方ほど、施術前のやりとりが大切になります。次の点を確認できるサロンだと安心です。</p><ul><li>過去のトラブルについて聞いてくれるか</li><li>使っているグルーや施術方法を説明してくれるか</li><li>心配なことを相談しやすい環境か（周囲を気にせず話せるか）</li><li>途中で違和感が出たときに、声をかけていいと伝えてくれるか</li></ul><p>「聞きにくい雰囲気だった」という理由で伝えそびれてしまうのが、いちばんもったいないパターンです。</p><h2 id="sec-8">TOHITOでの考え方</h2><p>ここからは当サロンについてです。TOHITO（トヒト）は三国ヶ丘駅西口から徒歩2分にある、完全個室・女性専用のLEDエクステ専門サロンです。店名は「人と人」に由来していて、施術そのものと同じくらい、カウンセリングを大切にしています。</p><p>TOHITOでは、はじめてのお客様に5〜10分ほどお時間をいただき、次の3点をうかがうようにしています。</p><ol><li><strong>過去のトラブルの有無</strong>：しみた、かゆみが出た、赤くなったなど、以前の施術で気になったこと。</li><li><strong>仕上がりのイメージ</strong>：どんな目元にしたいか。</li><li><strong>施術に求めていること</strong>：時短なのか、印象を変えたいのか。</li></ol><p>1つめを最初に置いているのは、不安がある状態のまま施術に入らないためです。完全個室で2席2名体制の少人数運営なので、周りを気にせずお話しいただけます。写真や図を見ながら相談したいというご要望が多いのも、この環境と関係しているようです。</p><p>なお、施術中に違和感を覚えたら、その場でお声がけください。途中で中断することもできます。「せっかく来たのだから最後まで」と我慢していただく必要はまったくありません。</p><h2 id="sec-9">気になる場合は医療機関へ</h2><p>最後に、いちばんお伝えしたいことをもう一度書きます。</p><p>目元の不調について、原因を判断できるのは医療機関です。インターネットの情報や、サロンスタッフの経験談は、あくまで一般的な参考にとどまります。かゆみや腫れ、痛みなど気になる変化が続くときは、自己判断せず、眼科や皮膚科など医療機関にご相談ください。受診の際に、いつ施術を受けたか、どんなメニューだったかを伝えられると、話がスムーズになります。</p><p>そのうえで、施術を再開できるかどうか、どんな形なら続けられるかは、医療機関の判断を踏まえてから一緒に考えていきましょう。</p><h2 id="sec-10">ご予約について</h2><p>「気になることがあるけれど、聞いていいのか分からない」という状態のままでも大丈夫です。カウンセリングは、そのためにお時間をいただいています。</p><p>メニューの詳細と空き状況は、ホットペッパービューティーからご確認いただけます。ご予約時のメッセージ欄に不安な点を書いていただければ、当日それを前提にお話しできます。</p><p><a href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金はこちら</a></p></div>
@@ -168,18 +179,21 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <a class="btn" href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金を見る</a>
     </div>
     <div class="related"><div class="ttl">あわせて読みたい</div><div class="cards"><a href="/hybrid-lash-dokode-dekiru-tohito/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュはどこでできる？TOHITOオリジナルメニューを解説</div>
 <div class="d">「ハイブリッドラッシュはどこでできる？」と探している方へ。上まつげエクステ×下まつげパーマの組み合わせが叶うTOHITOオリジナルメニューの内容・向いている人・来店の流れをまとめました。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-led-extension-under-perm-detail/" data-cat="まつげエクステ">
-<span class="tag">まつげエクステ</span>
-<div class="t">ハイブリッドラッシュとは？上エクステ×下パーマの組み合わせを細かく解説</div>
-<div class="d">ハイブリッドラッシュ（上マツエク＋下まつげパーマ）の仕組み・持ち・向いている人・サロン選びのポイントをやさしく解説。「盛りすぎず、物足りなくない」大人の目元を叶える組み合わせです。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュとは？上まつ毛エクステ×下まつ毛パーマの組み合わせを解説</div>
 <div class="d">ハイブリッドラッシュとは何か、どんな仕上がりになるのかを解説。上まつ毛にLEDエクステ、下まつ毛にパーマを組み合わせたTOHITOオリジナルメニューの特徴と向いている人を分かりやすく説明します。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a></div></div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/matsuge-extension-jikan-quality-salon/" data-cat="まつげエクステ">
+
+<span class="tag">まつげエクステ</span>
+<div class="t">マツエクの所要時間はどれくらい？サロン選びで変わる時間とクオリティの話</div>
+<div class="d">マツエクの施術時間はサロンによってなぜ違うのか。本数・メニュー・グルーの種類・カウンセリングの有無など、時間に影響する要素を整理し、時間とクオリティのバランスでサロンを選ぶ考え方を解説します。</div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月9日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a></div></div>
   </article>
 </div>
 <footer class="site"><div class="wrap">

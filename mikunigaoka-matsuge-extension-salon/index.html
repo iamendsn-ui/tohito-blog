@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://blog.tohitoeyelash.beauty/mikunigaoka-matsuge-extension-salon/">
 <meta property="og:site_name" content="TOHITO">
 <meta property="og:locale" content="ja_JP">
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#332C27">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap">
@@ -62,8 +63,10 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .cards{display:grid;gap:16px}
 .cards a{
   display:block;background:var(--card);border-radius:14px;padding:22px 22px 20px;
-  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;
+  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;overflow:hidden;
 }
+.cards a.has-thumb{padding-top:0}
+.cards a .thumb{display:block;width:calc(100% + 44px);max-width:none;margin:0 -22px 18px;aspect-ratio:16/9;object-fit:cover;background:var(--wash)}
 .cards a:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(90,66,44,.1)}
 .cards a[hidden]{display:none}
 .tag{
@@ -93,6 +96,8 @@ article h1{
 }
 .byline{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:6px}
 .byline .meta{margin-top:12px}
+figure.cover{margin:26px 0 0}
+figure.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:var(--wash)}
 
 .toc{background:var(--card);border-radius:14px;box-shadow:var(--shadow);padding:22px 26px;margin:32px 0 42px}
 .toc .ttl{font-family:"Shippori Mincho",serif;font-size:14px;letter-spacing:.16em;color:var(--ink-sub);text-align:center;margin-bottom:14px}
@@ -112,6 +117,9 @@ article h1{
 .body li::marker{color:var(--accent)}
 .body strong{font-weight:700;background:linear-gradient(transparent 64%,var(--wash) 64%)}
 .body blockquote{margin:0 0 26px;padding:2px 0 2px 18px;border-left:2px solid var(--pill);color:var(--ink-sub)}
+.body figure.ph{margin:6px 0 30px}
+.body figure.ph img{display:block;width:100%;border-radius:12px;background:var(--wash)}
+.body figure.ph figcaption{font-size:12.5px;color:var(--ink-faint);text-align:center;margin-top:9px;line-height:1.7;letter-spacing:.03em}
 .tw{overflow-x:auto;margin:0 0 28px;background:var(--card);border-radius:12px;box-shadow:var(--shadow)}
 .body table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.8}
 .body th,.body td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
@@ -138,6 +146,8 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
   body{font-size:15px;line-height:1.95}
   .filters button{padding:9px 18px;font-size:13px}
   .cards a{padding:20px 18px 18px}
+  .cards a.has-thumb{padding-top:0}
+  .cards a .thumb{width:calc(100% + 36px);margin:0 -18px 16px}
   .cards .t{font-size:17px}
   .body h2{font-size:18.5px;margin-top:48px}
   .cta{padding:28px 20px}
@@ -159,6 +169,7 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <span class="tag" style="margin-top:18px;display:inline-block">サロン情報</span>
       <h1>三国ヶ丘でマツエクサロンを選ぶなら｜比較のポイントと通い方</h1>
       <div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年9月22日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div>
+      
     </div>
     <nav class="toc"><div class="ttl">目 次</div><ol><li><a href="#sec-1">そもそもマツエクとはどんな施術か</a></li><li><a href="#sec-2">マツエクの主な種類を整理する</a></li><li><a href="#sec-3">「駅から近い」だけが通いやすさではない</a></li><li><a href="#sec-4">持ちを左右するのは、施術だけではない</a></li><li><a href="#sec-5">三国ヶ丘でサロンを比較するときのチェックポイント</a></li><li><a href="#sec-6">三国ヶ丘駅から徒歩2分、LEDエクステ専門サロンTOHITO</a></li><li><a href="#sec-7">カウンセリングで欠かさず確認する3つのこと</a></li><li><a href="#sec-8">通うペースとメンテナンスの考え方</a></li><li><a href="#sec-9">ご予約について</a></li></ol></nav>
     <div class="body"><p>「三国ヶ丘でマツエクサロンを探しているけれど、数が多くてどこを見て選べばいいのか分からない」。そんな声をよく聞きます。駅前は通勤や買い物のついでに寄りやすい一方で、サロンごとに扱っているメニューも、施術の考え方も少しずつ違います。</p><p>この記事では、まずマツエクの基本と種類を中立的に整理したうえで、三国ヶ丘というエリアでサロンを比較するときに見ておきたいポイントをまとめます。はじめての方も、他店から移りたいと考えている方も、判断の材料として使っていただければと思います。</p><h2 id="sec-1">そもそもマツエクとはどんな施術か</h2><p>マツエク（まつげエクステ）は、自分のまつ毛1本に対して人工毛を1本ずつ接着していく施術です。接着にはグルーと呼ばれる専用の接着剤を使います。ビューラーやマスカラを毎日使わなくても目元の印象を保ちやすくなるのが、いちばん分かりやすいメリットです。</p><p>一方で、自まつ毛に直接つけるものなので、自まつ毛の太さ・長さ・生え方によって、つけられる本数やデザインの幅は変わります。「同じメニューを頼んでも仕上がりが人によって違う」のは、この土台の差が理由です。だからこそ、メニュー名だけで選ぶより、カウンセリングでどこまで見てもらえるかが大切になります。</p><h2 id="sec-2">マツエクの主な種類を整理する</h2><p>サロンのメニュー表に並ぶ名前は、大きく次のように分けられます。</p><div class="tw"><table><thead><tr><th>種類</th><th>何をするか</th><th>向いている人</th></tr></thead><tbody><tr><td>シングルラッシュ</td><td>自まつ毛1本に人工毛を1本つける基本の方法</td><td>ナチュラルに本数を足したい</td></tr><tr><td>ボリュームラッシュ</td><td>細い人工毛を数本の束にしてつけ、毛量を出す</td><td>ふんわりと密度を出したい</td></tr><tr><td>フラットラッシュ</td><td>接着面が平たい人工毛。自まつ毛に接する面が広い</td><td>軽さと接着の安定を両立したい</td></tr><tr><td>LEDエクステ</td><td>LEDの光を当ててグルーを固める方式</td><td>施術直後の制限を減らしたい</td></tr></tbody></table></div><p>なかでも近年増えているのがLEDエクステです。従来のグルーは空気中の水分でゆっくり固まるため、施術後しばらくは洗顔や入浴を控えるよう案内されるのが一般的でした。LEDエクステはその場で光を当てて硬化させるので、当日の過ごし方の制限が少なくなります。両者の違いは<a href="/mikunigaoka-led-vs-normal/">三国ヶ丘のLEDエクステ｜普通のマツエクとの違いは？</a>でも項目ごとに整理しています。</p><h2 id="sec-3">「駅から近い」だけが通いやすさではない</h2><p>三国ヶ丘は南海高野線とJR阪和線が交わる駅で、仕事帰りや買い物のついでに立ち寄りやすいエリアです。ただ、通い続けられるかどうかは距離だけでは決まりません。</p><ul><li>営業時間が自分の生活リズムに合うか</li><li>定休日はいつか</li><li>当日や直前の予約が取れるか</li><li>車で行く場合、近くに駐車できる場所があるか</li><li>普段使っている支払い方法に対応しているか</li></ul><p>マツエクは一度きりではなく、繰り返し通うことで状態を保つ施術です。1回目の予約の取りやすさよりも、「2回目、3回目も無理なく通えるか」を先に想像しておくほうが、あとで困りにくくなります。</p><h2 id="sec-4">持ちを左右するのは、施術だけではない</h2><p>「前のサロンでは1週間ほどで取れてしまった」というご相談は珍しくありません。ただ、持ちが短くなる理由はひとつではなく、自まつ毛の毛周期、グルーの硬化状態、日々の摩擦やクレンジングなど、複数の要素が重なって起こります。</p><p>原因の切り分け方は<a href="/matsuge-extension-toreyasui-genin/">マツエクが取れやすい原因を総整理｜持ちを左右する7つのポイント</a>にまとめています。サロンを変える前に、まず自分の目元で何が起きているのかを整理しておくと、次のカウンセリングで伝えられる情報が増えます。</p><h2 id="sec-5">三国ヶ丘でサロンを比較するときのチェックポイント</h2><p>エリアで探すときに、実際に確認しておきたい項目を挙げます。</p><ol><li><strong>扱っているメニューの方向性</strong>：LEDエクステ専門なのか、幅広く扱っているのか。</li><li><strong>カウンセリングの時間があるか</strong>：仕上がりのすり合わせに時間を取っているか。</li><li><strong>空間のつくり</strong>：個室か、オープンな空間か。話しやすさに直結します。</li><li><strong>メンテナンスの案内の仕方</strong>：来店ペースをどう説明しているか。</li><li><strong>オフやリペアの扱い</strong>：他店でつけたエクステのオフに対応しているか。</li></ol><p>どれが正解ということはなく、自分が何を重視するかで答えは変わります。「静かに過ごしたい」のか「短時間で終わらせたい」のか、優先順位を先に決めておくと選びやすくなります。</p><h2 id="sec-6">三国ヶ丘駅から徒歩2分、LEDエクステ専門サロンTOHITO</h2><p>ここからは当サロンについてもご紹介します。TOHITO（トヒト）は三国ヶ丘駅西口から徒歩2分、堺市北区百舌鳥赤畑町にあるLEDエクステ専門サロンです。店名は「人と人」に由来していて、カウンセリングと人との繋がりを大切にしています。</p><p>特徴は次のとおりです。</p><ul><li><strong>完全個室・女性専用</strong>：2席2名体制の少人数運営で、他のお客様を気にせず相談できます。</li><li><strong>LEDエクステ専門</strong>：通常のマツエクは扱わず、LEDフラットラッシュ、ダブルフラット、パリエク、まつげパーマに絞っています。</li><li><strong>当日予約に対応</strong>：空きがあればその日のご案内も可能です。2名以上でのご来店もできます。</li><li><strong>支払い方法が幅広い</strong>：各種クレジットカード、PayPay、楽天ペイ、iD、交通系IC、現金に対応しています。</li><li><strong>近隣にコインパーキングあり</strong>：車でお越しの方にも使っていただけます。</li><li><strong>営業は9:00〜18:00、日曜定休</strong>：朝の時間から動ける日に合わせやすい設定です。</li></ul><p>ホットペッパービューティーに寄せられた口コミは90件、総合評価は4.96です（雰囲気4.9／接客5.0／技術・仕上がり5.0／メニュー・料金4.9）。書いてくださる方は20〜40代の女性が中心で、カウンセリングの丁寧さ、目元に合わせた似合わせデザイン、駅から近く通いやすいことが繰り返し挙がる傾向にあります。</p><h2 id="sec-7">カウンセリングで欠かさず確認する3つのこと</h2><p>TOHITOでは、はじめてのお客様に5〜10分ほどお時間をいただき、次の3点をうかがうようにしています。</p><ol><li><strong>過去のトラブルの有無</strong>：しみたことがある、かゆみが出たことがあるなど。</li><li><strong>仕上がりのイメージ</strong>：完全個室なので、写真や図を見ながら一緒に確認できます。</li><li><strong>施術に求めていること</strong>：時短なのか、ナチュラルさなのか、目元の印象を変えたいのか。</li></ol><p>ご来店のきっかけとして多いのは、まつげが下向きに生えている、左右差が気になる、以前の仕上がりに満足できなかった、といったお悩みです。土台の状態が違えば設計も変わるので、この最初のすり合わせにいちばん時間をかけています。写真を見ながら確認したいというご要望も多く、個室であることがそのまま相談しやすさにつながっている、という声の傾向があります。</p><h2 id="sec-8">通うペースとメンテナンスの考え方</h2><p>LEDエクステの持ちは4週間が目安です。TOHITOでは4週間に1回のご来店を、きれいな状態を保ちやすいペースとしてご案内しています。リピーターの方は4週間以内のご来店であればオフ代が無料になり、それ以外の場合のオフ代は一律500円です。</p><p>なお、リペアや付け替えをサロンから積極的にお勧めすることはしていません。ご希望があれば対応する、という考え方です。施術時間はカウンセリング込みで1時間〜1時間半ほどをみていただいています。数年単位で通ってくださる方も多く、年齢に合わせて仕上がりを少しずつ調整していけることが、続けやすさにつながっているようです。</p><h2 id="sec-9">ご予約について</h2><p>三国ヶ丘でマツエクサロンを探している方に向けて、選び方の考え方とTOHITOの中身をご紹介しました。「これでいい」ではなく「これがいい」と思える目元を、一緒に見つけられたらうれしいです。</p><p>メニューの詳細と空き状況は、ホットペッパービューティーからご確認いただけます。気になることがあれば、ご予約時のメッセージでお気軽にお知らせください。</p><p><a href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金はこちら</a></p></div>
@@ -168,18 +179,21 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <a class="btn" href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金を見る</a>
     </div>
     <div class="related"><div class="ttl">あわせて読みたい</div><div class="cards"><a href="/hybrid-lash-dokode-dekiru-tohito/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュはどこでできる？TOHITOオリジナルメニューを解説</div>
 <div class="d">「ハイブリッドラッシュはどこでできる？」と探している方へ。上まつげエクステ×下まつげパーマの組み合わせが叶うTOHITOオリジナルメニューの内容・向いている人・来店の流れをまとめました。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-led-extension-under-perm-detail/" data-cat="まつげエクステ">
-<span class="tag">まつげエクステ</span>
-<div class="t">ハイブリッドラッシュとは？上エクステ×下パーマの組み合わせを細かく解説</div>
-<div class="d">ハイブリッドラッシュ（上マツエク＋下まつげパーマ）の仕組み・持ち・向いている人・サロン選びのポイントをやさしく解説。「盛りすぎず、物足りなくない」大人の目元を叶える組み合わせです。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュとは？上まつ毛エクステ×下まつ毛パーマの組み合わせを解説</div>
 <div class="d">ハイブリッドラッシュとは何か、どんな仕上がりになるのかを解説。上まつ毛にLEDエクステ、下まつ毛にパーマを組み合わせたTOHITOオリジナルメニューの特徴と向いている人を分かりやすく説明します。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a></div></div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/matsuge-extension-jikan-quality-salon/" data-cat="まつげエクステ">
+
+<span class="tag">まつげエクステ</span>
+<div class="t">マツエクの所要時間はどれくらい？サロン選びで変わる時間とクオリティの話</div>
+<div class="d">マツエクの施術時間はサロンによってなぜ違うのか。本数・メニュー・グルーの種類・カウンセリングの有無など、時間に影響する要素を整理し、時間とクオリティのバランスでサロンを選ぶ考え方を解説します。</div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月9日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a></div></div>
   </article>
 </div>
 <footer class="site"><div class="wrap">

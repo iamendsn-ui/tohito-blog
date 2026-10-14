@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://blog.tohitoeyelash.beauty/sakai-kanzen-koshitsu-eyelash/">
 <meta property="og:site_name" content="TOHITO">
 <meta property="og:locale" content="ja_JP">
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#332C27">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap">
@@ -62,8 +63,10 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .cards{display:grid;gap:16px}
 .cards a{
   display:block;background:var(--card);border-radius:14px;padding:22px 22px 20px;
-  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;
+  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;overflow:hidden;
 }
+.cards a.has-thumb{padding-top:0}
+.cards a .thumb{display:block;width:calc(100% + 44px);max-width:none;margin:0 -22px 18px;aspect-ratio:16/9;object-fit:cover;background:var(--wash)}
 .cards a:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(90,66,44,.1)}
 .cards a[hidden]{display:none}
 .tag{
@@ -93,6 +96,8 @@ article h1{
 }
 .byline{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:6px}
 .byline .meta{margin-top:12px}
+figure.cover{margin:26px 0 0}
+figure.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:var(--wash)}
 
 .toc{background:var(--card);border-radius:14px;box-shadow:var(--shadow);padding:22px 26px;margin:32px 0 42px}
 .toc .ttl{font-family:"Shippori Mincho",serif;font-size:14px;letter-spacing:.16em;color:var(--ink-sub);text-align:center;margin-bottom:14px}
@@ -112,6 +117,9 @@ article h1{
 .body li::marker{color:var(--accent)}
 .body strong{font-weight:700;background:linear-gradient(transparent 64%,var(--wash) 64%)}
 .body blockquote{margin:0 0 26px;padding:2px 0 2px 18px;border-left:2px solid var(--pill);color:var(--ink-sub)}
+.body figure.ph{margin:6px 0 30px}
+.body figure.ph img{display:block;width:100%;border-radius:12px;background:var(--wash)}
+.body figure.ph figcaption{font-size:12.5px;color:var(--ink-faint);text-align:center;margin-top:9px;line-height:1.7;letter-spacing:.03em}
 .tw{overflow-x:auto;margin:0 0 28px;background:var(--card);border-radius:12px;box-shadow:var(--shadow)}
 .body table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.8}
 .body th,.body td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
@@ -138,6 +146,8 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
   body{font-size:15px;line-height:1.95}
   .filters button{padding:9px 18px;font-size:13px}
   .cards a{padding:20px 18px 18px}
+  .cards a.has-thumb{padding-top:0}
+  .cards a .thumb{width:calc(100% + 36px);margin:0 -18px 16px}
   .cards .t{font-size:17px}
   .body h2{font-size:18.5px;margin-top:48px}
   .cta{padding:28px 20px}
@@ -159,6 +169,7 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <span class="tag" style="margin-top:18px;display:inline-block">サロン情報</span>
       <h1>堺市で完全個室のまつげエクステサロンを選ぶメリットと注意点</h1>
       <div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年9月8日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div>
+      
     </div>
     <nav class="toc"><div class="ttl">目 次</div><ol><li><a href="#sec-1">完全個室のサロンを選ぶ人が増えている背景</a></li><li><a href="#sec-2">「完全個室」「半個室」「オープンスペース」は何が違うのか</a></li><li><a href="#sec-3">完全個室が向いているのはこんな方</a></li><li><a href="#sec-4">完全個室にも知っておきたい注意点</a></li><li><a href="#sec-5">堺市でまつげエクステサロンを選ぶときのチェックポイント</a></li><li><a href="#sec-6">TOHITOの完全個室・女性専用という環境</a></li><li><a href="#sec-7">カウンセリングで確認している3つのこと</a></li><li><a href="#sec-8">三国ヶ丘駅から通いやすい立地です</a></li><li><a href="#sec-9">ご予約について</a></li></ol></nav>
     <div class="body"><h2 id="sec-1">完全個室のサロンを選ぶ人が増えている背景</h2><p>まつげエクステのサロンを探すとき、条件として「完全個室」を挙げる方が増えています。以前は駅からの距離やデザインの好み、口コミの評価が主な判断材料でしたが、そこに「どんな空間で施術を受けるか」という視点が加わってきました。</p><p>理由のひとつは、まつげエクステが目を閉じたまま1時間前後を過ごす施術だということです。自分では周囲の様子が見えない状態が続くので、空間の落ち着きがそのまま体感の心地よさにつながります。</p><p>もうひとつは、カウンセリングで話す内容が意外とプライベートだからです。過去に目元が赤くなったことがある、他のお店での仕上がりが好みと違った、年齢とともにまぶたの印象が変わってきた気がする。こうした話は、隣の席に他のお客様がいる環境ではどうしても言葉を選んでしまいます。話しきれなかった部分が、そのまま仕上がりのズレになってしまうこともあります。</p><h2 id="sec-2">「完全個室」「半個室」「オープンスペース」は何が違うのか</h2><p>サロンの表記はお店によって幅があります。おおまかには次のように整理できます。</p><p><strong>オープンスペース</strong>は、施術ベッドが同じフロアに並んでいて、カーテンなどの仕切りがないタイプです。開放感があり、サロン全体の様子が見えるので初めてでも入りやすい雰囲気があります。</p><p><strong>半個室</strong>は、ベッドごとにカーテンやパーテーションで区切られているタイプです。視線はある程度遮られますが、音は通ります。隣の施術中の会話が聞こえることもあります。</p><p><strong>完全個室</strong>は、壁と扉で仕切られた部屋で施術を受けるタイプです。視線も音もかなり遮られるので、会話の内容が外に聞こえにくくなります。</p><p>注意したいのは、この呼び方に統一されたルールがないことです。「個室」と書かれていてもカーテン仕切りの場合がありますし、逆に控えめに「半個室」と表記していても実際は壁と扉があることもあります。気になる場合は、予約前にお店に直接確認するのが確実です。</p><h2 id="sec-3">完全個室が向いているのはこんな方</h2><p>すべての方に完全個室が必要というわけではありません。ただ、次のような方は相性がよいことが多いです。</p><ul><li>施術中の会話を人に聞かれたくない方</li><li>過去にトラブルがあり、経緯をしっかり説明したい方</li><li>仕上がりのイメージを写真などを見ながらじっくり詰めたい方</li><li>仕事や育児の合間に、静かに過ごせる時間として通いたい方</li><li>目元の悩みを人前で話すのが気恥ずかしいと感じる方</li></ul><p>特に「他店で思っていた仕上がりにならなかった」という経験がある方は、その理由をていねいに共有できるかどうかで次の仕上がりが変わります。完全個室は、その会話のハードルを下げてくれる環境と言えます。</p><h2 id="sec-4">完全個室にも知っておきたい注意点</h2><p>完全個室にはよい面だけでなく、事前に知っておくと納得しやすい点もあります。</p><p>ひとつは、席数が少ないサロンが多いことです。個室にすると同じ面積に置けるベッドの数が限られるため、予約枠がタイトになりがちです。希望の日時が取りにくいと感じることもあります。</p><p>もうひとつは、担当スタッフとの相性の影響が大きいことです。密閉された空間で1時間以上を過ごすので、話しやすさや距離感の取り方が快適さを左右します。会話を楽しみたい方も、静かに過ごしたい方も、その希望を最初に伝えておくとお互いに過ごしやすくなります。</p><h2 id="sec-5">堺市でまつげエクステサロンを選ぶときのチェックポイント</h2><p>堺市はエリアが広く、駅ごとにサロンの雰囲気も変わります。個室かどうかに加えて、次の5点を見ておくと選びやすくなります。</p><p><strong>1. 通いやすさ</strong>　まつげエクステは4週間前後の周期で通うことが多い施術です。「1回行けたらいい場所」ではなく「毎月無理なく行ける場所」を基準にすると続けやすくなります。駅からの距離、駐車場の有無、営業時間を確認しておきましょう。</p><p><strong>2. カウンセリングの時間があるか</strong>　施術時間の中にカウンセリングが含まれているか、初回はどのくらい時間を取ってもらえるかは、仕上がりの満足度に直結します。</p><p><strong>3. 扱っているメニューの考え方</strong>　エクステの種類、まつげパーマとの組み合わせ、下まつ毛への対応など、サロンによって得意分野が違います。自分の悩みに近いメニューがあるかを見ておくと安心です。</p><p><strong>4. 衛生管理と使用する材料の説明</strong>　グルー（接着剤）の種類や消毒の方法について質問したときに、分かる言葉で説明してもらえるかどうかは判断材料になります。</p><p><strong>5. オフやリペアの扱い</strong>　他店で付けたエクステのオフに対応しているか、リペアの考え方はどうかも確認しておくと、通い始めてからの負担感が変わります。</p><p>エクステの種類ごとの違いについては、<a href="/sakai-led-merit/">堺市でLEDエクステをするなら知っておきたい5つのメリット</a>でも整理しています。</p><h2 id="sec-6">TOHITOの完全個室・女性専用という環境</h2><p>ここからは、堺市北区でLEDエクステ専門サロンとして営業しているTOHITO（トヒト）についてご紹介します。</p><p>TOHITOは完全個室・女性専用のサロンで、2席2名体制の少人数運営です。同じ時間に対応するのは最大でも2名なので、施術中に他のお客様の会話が気になることがありません。当日のご予約にも対応していますし、ご友人同士など2名以上でのご来店も可能です。</p><p>完全個室であることの実際のメリットとして大きいのは、写真や図をお見せしながら仕上がりのイメージをすり合わせられることです。「ナチュラルに」「自然な感じで」という言葉は、人によって思い描く濃さや長さがまったく違います。言葉だけで進めると、施術後に「思っていたより濃かった」というズレが起こりやすくなります。画面や図を一緒に見ながら「このくらい」と確認できると、その差が縮まります。</p><p>ホットペッパービューティーに寄せられている90件の口コミでは、総合評価4.96、そのうち雰囲気の項目が4.9、接客の項目が5.0という結果になっています。個々の文面ではなく傾向としてまとめると、カウンセリングのていねいさや、他のお客様を気にせず相談できる環境について触れられることが多くなっています。</p><h2 id="sec-7">カウンセリングで確認している3つのこと</h2><p>TOHITOでは、初めてのご来店時に5〜10分ほどのカウンセリングの時間を取っています。施術全体はカウンセリング込みで1時間〜1時間半が目安です。</p><p>その中で毎回うかがっているのが、次の3点です。</p><ol><li><strong>過去のトラブル</strong>　目元がしみた、赤みが出た、腫れたことがあるなど、これまでの経験を確認します。特にグルーへの反応は途中から出ることもあるため、経緯を共有していただくことが大切です。詳しくは<a href="/matsuge-extension-glue-allergy-symptoms/">マツエクのグルーアレルギー、症状と気になったときの対処法</a>でも触れています。</li><li><strong>仕上がりのイメージ</strong>　なりたい印象を、写真や図を交えて確認します。</li><li><strong>施術に求めていること</strong>　毎朝のメイク時間を減らしたい、写真映えを重視したい、すっぴんに自信を持ちたいなど、目的によって最適なデザインは変わります。</li></ol><p>店名のTOHITOは「人と人」が語源で、カウンセリングと人とのつながりを大切にするという考え方から付けられています。「これでいい」ではなく「これがいい」と思える仕上がりを一緒に探すために、完全個室という環境を選んでいます。</p><h2 id="sec-8">三国ヶ丘駅から通いやすい立地です</h2><p>TOHITOは大阪府堺市北区百舌鳥赤畑町にあり、南海高野線・JR阪和線の三国ヶ丘駅 西口から徒歩2分の場所にあります。営業時間は9:00〜18:00、日曜定休です。近隣にはコインパーキングもあるため、お車でのご来店にも対応しています。</p><p>お支払いは各種クレジットカード、PayPay、楽天ペイ、iD、交通系IC、現金からお選びいただけます。</p><p>なお、TOHITOはLEDエクステの専門サロンです。LEDエクステとは、LEDを照射してグルーを硬化させる方式のまつげエクステで、施術当日から洗顔や入浴、運動ができるという特徴があります。詳しくは<a href="/mikunigaoka-led-extension/">三国ヶ丘でLEDエクステをするなら？メリット・料金・おすすめの人を解説</a>をご覧ください。</p><h2 id="sec-9">ご予約について</h2><p>完全個室でじっくり相談しながらまつげエクステを受けたい方、堺市・三国ヶ丘エリアで通いやすいサロンを探している方は、一度カウンセリングにお越しください。メニューの内容や空き状況は、ホットペッパービューティーのページからご確認いただけます。</p><p><a href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金はこちら</a></p></div>
@@ -168,18 +179,21 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <a class="btn" href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金を見る</a>
     </div>
     <div class="related"><div class="ttl">あわせて読みたい</div><div class="cards"><a href="/hybrid-lash-dokode-dekiru-tohito/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュはどこでできる？TOHITOオリジナルメニューを解説</div>
 <div class="d">「ハイブリッドラッシュはどこでできる？」と探している方へ。上まつげエクステ×下まつげパーマの組み合わせが叶うTOHITOオリジナルメニューの内容・向いている人・来店の流れをまとめました。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-led-extension-under-perm-detail/" data-cat="まつげエクステ">
-<span class="tag">まつげエクステ</span>
-<div class="t">ハイブリッドラッシュとは？上エクステ×下パーマの組み合わせを細かく解説</div>
-<div class="d">ハイブリッドラッシュ（上マツエク＋下まつげパーマ）の仕組み・持ち・向いている人・サロン選びのポイントをやさしく解説。「盛りすぎず、物足りなくない」大人の目元を叶える組み合わせです。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュとは？上まつ毛エクステ×下まつ毛パーマの組み合わせを解説</div>
 <div class="d">ハイブリッドラッシュとは何か、どんな仕上がりになるのかを解説。上まつ毛にLEDエクステ、下まつ毛にパーマを組み合わせたTOHITOオリジナルメニューの特徴と向いている人を分かりやすく説明します。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a></div></div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/matsuge-extension-jikan-quality-salon/" data-cat="まつげエクステ">
+
+<span class="tag">まつげエクステ</span>
+<div class="t">マツエクの所要時間はどれくらい？サロン選びで変わる時間とクオリティの話</div>
+<div class="d">マツエクの施術時間はサロンによってなぜ違うのか。本数・メニュー・グルーの種類・カウンセリングの有無など、時間に影響する要素を整理し、時間とクオリティのバランスでサロンを選ぶ考え方を解説します。</div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月9日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a></div></div>
   </article>
 </div>
 <footer class="site"><div class="wrap">

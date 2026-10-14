@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://blog.tohitoeyelash.beauty/matsuge-extension-glue-allergy-symptoms/">
 <meta property="og:site_name" content="TOHITO">
 <meta property="og:locale" content="ja_JP">
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#332C27">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap">
@@ -62,8 +63,10 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .cards{display:grid;gap:16px}
 .cards a{
   display:block;background:var(--card);border-radius:14px;padding:22px 22px 20px;
-  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;
+  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;overflow:hidden;
 }
+.cards a.has-thumb{padding-top:0}
+.cards a .thumb{display:block;width:calc(100% + 44px);max-width:none;margin:0 -22px 18px;aspect-ratio:16/9;object-fit:cover;background:var(--wash)}
 .cards a:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(90,66,44,.1)}
 .cards a[hidden]{display:none}
 .tag{
@@ -93,6 +96,8 @@ article h1{
 }
 .byline{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:6px}
 .byline .meta{margin-top:12px}
+figure.cover{margin:26px 0 0}
+figure.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:var(--wash)}
 
 .toc{background:var(--card);border-radius:14px;box-shadow:var(--shadow);padding:22px 26px;margin:32px 0 42px}
 .toc .ttl{font-family:"Shippori Mincho",serif;font-size:14px;letter-spacing:.16em;color:var(--ink-sub);text-align:center;margin-bottom:14px}
@@ -112,6 +117,9 @@ article h1{
 .body li::marker{color:var(--accent)}
 .body strong{font-weight:700;background:linear-gradient(transparent 64%,var(--wash) 64%)}
 .body blockquote{margin:0 0 26px;padding:2px 0 2px 18px;border-left:2px solid var(--pill);color:var(--ink-sub)}
+.body figure.ph{margin:6px 0 30px}
+.body figure.ph img{display:block;width:100%;border-radius:12px;background:var(--wash)}
+.body figure.ph figcaption{font-size:12.5px;color:var(--ink-faint);text-align:center;margin-top:9px;line-height:1.7;letter-spacing:.03em}
 .tw{overflow-x:auto;margin:0 0 28px;background:var(--card);border-radius:12px;box-shadow:var(--shadow)}
 .body table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.8}
 .body th,.body td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
@@ -138,6 +146,8 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
   body{font-size:15px;line-height:1.95}
   .filters button{padding:9px 18px;font-size:13px}
   .cards a{padding:20px 18px 18px}
+  .cards a.has-thumb{padding-top:0}
+  .cards a .thumb{width:calc(100% + 36px);margin:0 -18px 16px}
   .cards .t{font-size:17px}
   .body h2{font-size:18.5px;margin-top:48px}
   .cta{padding:28px 20px}
@@ -159,6 +169,7 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <span class="tag" style="margin-top:18px;display:inline-block">まつげエクステ</span>
       <h1>マツエクのグルーアレルギー、症状と気になったときの対処法</h1>
       <div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年9月5日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div>
+      
     </div>
     <nav class="toc"><div class="ttl">目 次</div><ol><li><a href="#sec-1">マツエクのグルーとは何か</a></li><li><a href="#sec-2">グルーアレルギーとはどういう状態か</a></li><li><a href="#sec-3">こんな症状が出たら注意したいサイン</a></li><li><a href="#sec-4">「ある日突然」反応が出るのはなぜか</a></li><li><a href="#sec-5">気になる症状が出たときの対処の流れ</a></li><li><a href="#sec-6">サロンに相談するときに伝えると良いこと</a></li><li><a href="#sec-7">サロン選びのポイント：グルーアレルギーが不安なときは</a></li><li><a href="#sec-8">TOHITOが大切にしているカウンセリングについて</a></li><li><a href="#sec-9">TOHITOのご予約・アクセス</a></li></ol></nav>
     <div class="body"><h2 id="sec-1">マツエクのグルーとは何か</h2><p>まつげエクステは、専用の接着剤（グルー）を使って人工のまつ毛を自まつ毛に1本ずつ接着していく施術です。グルーはほんの数秒で硬化する強力な接着剤で、施術中や施術直後には揮発成分が発生し、目元の皮膚や粘膜に触れることがあります。</p><p>この揮発成分が、かゆみや赤みといった不快な症状の原因になることがあります。とくに目元は皮膚が薄くデリケートな部位のため、体が反応しやすい場所でもあります。</p><p>なお、LEDエクステの場合は、LED照射によってグルーを硬化させる仕組みを採用しています。通常のグルーが空気中の湿気で硬化するのに対し、LEDの光で瞬時に固めるため、硬化のスピードや過程が異なります。詳しくは<a href="/mikunigaoka-led-vs-normal/">三国ヶ丘のLEDエクステ｜普通のマツエクとの違いは？</a>で解説しています。</p><h2 id="sec-2">グルーアレルギーとはどういう状態か</h2><p>グルーアレルギーとは、グルーに含まれる成分に対して体が過剰に反応してしまう状態のことです。免疫が「異物だ」と判断し、防衛反応としてかゆみや腫れを引き起こします。</p><p>よく混同されがちですが、アレルギー反応と刺激反応（かぶれ）は厳密には異なるものです。ただし、見た目の症状だけで両者を区別することは素人には難しく、専門家でなければ判断できません。</p><p>「なんか目元がおかしいな」と感じたら、自己判断せず、皮膚科または眼科を受診することが大切です。自分でアレルギーかどうかを決めようとするより、専門医に診てもらうほうが安心です。</p><h2 id="sec-3">こんな症状が出たら注意したいサイン</h2><p>以下のような症状が施術後に現れた場合は、注意が必要なサインかもしれません。</p><ul><li>目の周りのかゆみ</li><li>赤み・腫れ</li><li>灼熱感（ヒリヒリ・じんじんする感覚）</li><li>目やにの増加</li><li>まぶたのむくみ</li></ul><p>症状は施術直後に出ることもありますが、翌日以降にじわじわと現れるケースもあります。「施術直後は何もなかったのに、翌朝起きたら腫れていた」という経験をする方も少なくありません。</p><p>また、繰り返しグルーにさらされることで、ある時点から急に反応が出てくることがあります（このしくみについては次の章で説明します）。症状が軽くても、「なんか気になる」と感じたら早めにサロンや医療機関へ相談することをおすすめします。</p><h2 id="sec-4">「ある日突然」反応が出るのはなぜか</h2><p>「これまでずっと問題なかったのに、急にかゆくなった」という相談は、現場でも実際に寄せられることがあります。スタッフが説明する機会も多いテーマです。</p><p>アレルギーは、同じ物質に繰り返しさらされることで、体の中で少しずつ&quot;感作&quot;が積み重なっていくことがあります。感作とは、免疫が特定の物質を「危険なもの」として記憶していくプロセスのこと。ある閾値（しきい値）を超えた段階で、初めて症状として現れることがあります。</p><p>「去年まで平気だったから大丈夫」とは言い切れないのが、アレルギーのやっかいなところです。施術の頻度、使用するグルーの種類の変化、体調や季節の変化なども影響する可能性があります。</p><p>突然の症状に驚いてしまうこともありますが、自己判断はせず、気になったら皮膚科や眼科へ相談してみてください。</p><h2 id="sec-5">気になる症状が出たときの対処の流れ</h2><p>症状が出たときの基本的な流れをまとめます。</p><h3>1. 施術したサロンへ連絡する</h3><p>まず施術を受けたサロンへ連絡しましょう。症状が出た時期や状況を伝えると、サロン側も適切な案内がしやすくなります。</p><h3>2. 強い症状は速やかに医療機関へ</h3><p>腫れが強い・目が開けにくい・視力に影響がある・痛みが強いといった場合は、速やかに皮膚科または眼科を受診してください。受診の際は、「グルーを使うまつげエクステの施術を受けた」と医師に伝えると、状況が正確に伝わりやすくなります。</p><h3>3. 自分でエクステを引っ張らない</h3><p>症状が気になるからといって、自分でエクステを引っ張って取ろうとするのは禁物です。自まつ毛ごと抜けてしまったり、皮膚を傷つけてしまったりする可能性があります。自まつ毛の状態が気になる方は<a href="/matsuge-extension-mou-shuki/">まつげエクステと毛周期の関係を知るとリペアのタイミングがわかる</a>もあわせてご覧ください。</p><h2 id="sec-6">サロンに相談するときに伝えると良いこと</h2><p>サロンへ相談する際、以下の情報を伝えると状況が整理しやすくなります。</p><div class="tw"><table><thead><tr><th>伝えると良いこと</th><th>具体的な内容</th></tr></thead><tbody><tr><td>症状が出たタイミング</td><td>施術直後／翌日／数日後など</td></tr><tr><td>症状の内容</td><td>かゆみ・赤み・腫れ・灼熱感など</td></tr><tr><td>過去の経歴</td><td>以前に似た症状が出たことがあるか</td></tr><tr><td>アレルギー歴</td><td>花粉症・アトピー・薬アレルギーなど</td></tr></tbody></table></div><p>とくに「過去に同じような症状が出たことがある」という情報は、サロン側にとってとても重要です。施術前のカウンセリングでこうしたトラブル歴を共有しておくことが、安心して施術を受けるための第一歩になります。</p><p>TOHITOでは、施術前のカウンセリングで必ず「過去のトラブル歴／仕上がりのイメージ／施術に求めること」の3点を確認しています。グルーアレルギーの不安がある場合も、この場で遠慮なく共有していただけます。</p><h2 id="sec-7">サロン選びのポイント：グルーアレルギーが不安なときは</h2><p>グルーアレルギーが心配なときほど、サロン選びは慎重にしたいところです。次のポイントを参考にしてみてください。</p><h3>カウンセリングで既往歴・トラブル歴を確認するサロン</h3><p>施術前に「これまでアレルギーが出たことはありますか？」と丁寧に聞いてくれるサロンは、リスク管理への意識が高いと言えます。初回だけでなく、状況が変わったときに改めて確認してくれるサロンだと、より安心です。</p><h3>ゆっくり相談できる環境かどうか</h3><p>オープンスペースだと、他のお客様の目が気になって「実は前にかゆくなったことがあって…」と言いづらいことがあります。完全個室など、プライバシーが守られた環境のほうが、気になることを話しやすいですね。</p><h3>LEDエクステという選択肢</h3><p>LEDエクステは、LED照射でグルーを硬化させるため、硬化にかかる時間が短く、施術中の揮発成分への暴露時間が通常のマツエクとは異なります。また、施術当日から洗顔・入浴・運動が可能なため、施術後のセルフケアがしやすいのも特徴のひとつです。</p><p>LEDエクステの特性についてさらに詳しく知りたい方は、<a href="/sakai-led-merit/">堺市でLEDエクステをするなら知っておきたい5つのメリット</a>をご覧ください。</p><h2 id="sec-8">TOHITOが大切にしているカウンセリングについて</h2><p>TOHITOは大阪・堺市のLEDエクステ専門サロンです。完全個室・女性専用・2席2名体制の少人数運営で、他のお客様を気にせず相談できる環境を整えています。</p><h3>施術前に必ず確認する3つのこと</h3><p>TOHITOのカウンセリングでは、毎回必ず以下の3点を確認しています。</p><ol><li><strong>過去のトラブル歴</strong>（かゆみ・赤みが出たことがあるかなど）</li><li><strong>仕上がりのイメージ</strong>（どんな目元にしたいか）</li><li><strong>施術に求めていること</strong>（長持ちさせたい・ナチュラルにしたいなど）</li></ol><p>グルーアレルギーへの不安や、過去に気になる症状が出たことがある場合も、このカウンセリングの場で遠慮なくお伝えいただけます。</p><h3>写真や図を見ながら話せる個室空間</h3><p>完全個室なので、写真や図を見ながら「こんな仕上がりにしたい」「ここが心配で…」と落ち着いて話せます。不安なことや疑問点を事前に共有することで、施術をより安心して受けていただける環境を大切にしています。</p><h3>LEDエクステ専門だからこそできる説明</h3><p>TOHITOはLEDエクステのみを扱う専門サロンです。LEDグルーの特性や、施術当日から洗顔・入浴・運動が可能な理由なども、施術前にきちんとご説明しています。初めてLEDエクステを受ける方も、気になることはどうぞ遠慮なくご相談ください。</p><h2 id="sec-9">TOHITOのご予約・アクセス</h2><p><strong>TOHITO（トヒト）</strong></p><p>大阪府堺市北区百舌鳥赤畑町1-8-10 西川商事ビル402</p><p>南海高野線・JR阪和線「三国ヶ丘駅」西口から徒歩2分。近隣にコインパーキングもございます。</p><ul><li>営業時間：9:00〜18:00</li><li>定休日：日曜日</li><li>当日予約も承っています</li><li>完全個室・女性専用</li></ul><p>ご料金・空き状況はホットペッパービューティーからご確認いただけます。</p><p><a href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金はこちら</a></p></div>
@@ -168,18 +179,21 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <a class="btn" href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金を見る</a>
     </div>
     <div class="related"><div class="ttl">あわせて読みたい</div><div class="cards"><a href="/hybrid-lash-dokode-dekiru-tohito/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュはどこでできる？TOHITOオリジナルメニューを解説</div>
 <div class="d">「ハイブリッドラッシュはどこでできる？」と探している方へ。上まつげエクステ×下まつげパーマの組み合わせが叶うTOHITOオリジナルメニューの内容・向いている人・来店の流れをまとめました。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-led-extension-under-perm-detail/" data-cat="まつげエクステ">
-<span class="tag">まつげエクステ</span>
-<div class="t">ハイブリッドラッシュとは？上エクステ×下パーマの組み合わせを細かく解説</div>
-<div class="d">ハイブリッドラッシュ（上マツエク＋下まつげパーマ）の仕組み・持ち・向いている人・サロン選びのポイントをやさしく解説。「盛りすぎず、物足りなくない」大人の目元を叶える組み合わせです。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュとは？上まつ毛エクステ×下まつ毛パーマの組み合わせを解説</div>
 <div class="d">ハイブリッドラッシュとは何か、どんな仕上がりになるのかを解説。上まつ毛にLEDエクステ、下まつ毛にパーマを組み合わせたTOHITOオリジナルメニューの特徴と向いている人を分かりやすく説明します。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a></div></div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/matsuge-extension-jikan-quality-salon/" data-cat="まつげエクステ">
+
+<span class="tag">まつげエクステ</span>
+<div class="t">マツエクの所要時間はどれくらい？サロン選びで変わる時間とクオリティの話</div>
+<div class="d">マツエクの施術時間はサロンによってなぜ違うのか。本数・メニュー・グルーの種類・カウンセリングの有無など、時間に影響する要素を整理し、時間とクオリティのバランスでサロンを選ぶ考え方を解説します。</div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月9日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a></div></div>
   </article>
 </div>
 <footer class="site"><div class="wrap">

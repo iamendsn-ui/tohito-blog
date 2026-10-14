@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://blog.tohitoeyelash.beauty/matsuge-extension-toreyasui-genin/">
 <meta property="og:site_name" content="TOHITO">
 <meta property="og:locale" content="ja_JP">
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#332C27">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap">
@@ -62,8 +63,10 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .cards{display:grid;gap:16px}
 .cards a{
   display:block;background:var(--card);border-radius:14px;padding:22px 22px 20px;
-  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;
+  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;overflow:hidden;
 }
+.cards a.has-thumb{padding-top:0}
+.cards a .thumb{display:block;width:calc(100% + 44px);max-width:none;margin:0 -22px 18px;aspect-ratio:16/9;object-fit:cover;background:var(--wash)}
 .cards a:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(90,66,44,.1)}
 .cards a[hidden]{display:none}
 .tag{
@@ -93,6 +96,8 @@ article h1{
 }
 .byline{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:6px}
 .byline .meta{margin-top:12px}
+figure.cover{margin:26px 0 0}
+figure.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:var(--wash)}
 
 .toc{background:var(--card);border-radius:14px;box-shadow:var(--shadow);padding:22px 26px;margin:32px 0 42px}
 .toc .ttl{font-family:"Shippori Mincho",serif;font-size:14px;letter-spacing:.16em;color:var(--ink-sub);text-align:center;margin-bottom:14px}
@@ -112,6 +117,9 @@ article h1{
 .body li::marker{color:var(--accent)}
 .body strong{font-weight:700;background:linear-gradient(transparent 64%,var(--wash) 64%)}
 .body blockquote{margin:0 0 26px;padding:2px 0 2px 18px;border-left:2px solid var(--pill);color:var(--ink-sub)}
+.body figure.ph{margin:6px 0 30px}
+.body figure.ph img{display:block;width:100%;border-radius:12px;background:var(--wash)}
+.body figure.ph figcaption{font-size:12.5px;color:var(--ink-faint);text-align:center;margin-top:9px;line-height:1.7;letter-spacing:.03em}
 .tw{overflow-x:auto;margin:0 0 28px;background:var(--card);border-radius:12px;box-shadow:var(--shadow)}
 .body table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.8}
 .body th,.body td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
@@ -138,6 +146,8 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
   body{font-size:15px;line-height:1.95}
   .filters button{padding:9px 18px;font-size:13px}
   .cards a{padding:20px 18px 18px}
+  .cards a.has-thumb{padding-top:0}
+  .cards a .thumb{width:calc(100% + 36px);margin:0 -18px 16px}
   .cards .t{font-size:17px}
   .body h2{font-size:18.5px;margin-top:48px}
   .cta{padding:28px 20px}
@@ -159,6 +169,7 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <span class="tag" style="margin-top:18px;display:inline-block">まつげエクステ</span>
       <h1>マツエクが取れやすい原因を総整理｜持ちを左右する7つのポイント</h1>
       <div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年9月7日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div>
+      
     </div>
     <nav class="toc"><div class="ttl">目 次</div><ol><li><a href="#sec-1">マツエクが取れやすいのはなぜ？まず原因の全体像を知ろう</a></li><li><a href="#sec-2">原因①｜自まつ毛の状態と「自まつ毛ごと抜ける」問題</a></li><li><a href="#sec-3">原因②｜毛周期とリペアのタイミングのズレ</a></li><li><a href="#sec-4">原因③｜グルーの硬化不足と接着の安定性</a></li><li><a href="#sec-5">原因④｜生活習慣・スキンケアの影響</a></li><li><a href="#sec-6">取れやすい時期はある？季節・体調との関係</a></li><li><a href="#sec-7">「取れやすい」を改善するサロン選びの3つの視点</a></li><li><a href="#sec-8">TOHITOのカウンセリングで「取れやすい」原因を特定するプロセス</a></li><li><a href="#sec-9">TOHITOのLEDエクステが「持ちがいい」と評価される理由</a></li><li><a href="#sec-10">まずはカウンセリングで相談してみませんか</a></li></ol></nav>
     <div class="body"><h2 id="sec-1">マツエクが取れやすいのはなぜ？まず原因の全体像を知ろう</h2><p>「4週間もたないうちに半分以上取れてしまった」「リペアの翌週にはもうスカスカになっている」——そんなお悩みを抱えている方は少なくありません。</p><p>マツエクが取れやすい原因は、大きく「自まつ毛の状態」「グルーの硬化・接着」「生活習慣」「毛周期」の4つのカテゴリに分けられます。ただし実際には、これらが複数重なっているケースがほとんどです。</p><p>原因を整理することで、「自分でできる対策」と「サロンに相談すべきこと」を区別できるようになります。順番に見ていきましょう。</p><h2 id="sec-2">原因①｜自まつ毛の状態と「自まつ毛ごと抜ける」問題</h2><p>まず見落としがちなのが、「エクステが取れた」のではなく「自まつ毛ごと抜けた」ケースです。抜けた毛の根元を見ると、白い球状の毛根がついていることがあります。この場合、接着の問題ではなく自まつ毛の抜けやすさが原因です。</p><p>自まつ毛の状態は、持ちに直接影響します。</p><ul><li><strong>細い・短い</strong>：エクステとの接着面積が確保しにくく、外れやすい</li><li><strong>油分が多い</strong>：もともとの皮脂量が多いと、グルーの接着が安定しにくい</li><li><strong>下向きに生えている</strong>：エクステの重さがかかる方向にまつ毛が引っ張られ、抜けやすくなることがある</li></ul><p>特に下向きまつ毛は持ちへの影響が大きく、生え方そのものへの対策が必要になる場合があります。詳しくは<a href="/shitamuki-matsuge-matsuke-taisaku/">下向きまつげにマツエクをつけるコツと、向きを整える対策とは</a>も参考にしてみてください。</p><h2 id="sec-3">原因②｜毛周期とリペアのタイミングのズレ</h2><p>まつ毛には「成長期・退行期・休止期」という毛周期があり、約4〜6週間のサイクルで繰り返されています。施術のタイミングによっては、成長後半〜退行期に入ったまつ毛にエクステを装着することになり、その毛が自然に抜け落ちるとエクステも一緒に取れてしまいます。</p><p>これは施術の質とは関係なく、自まつ毛の生え変わりのサイクルによるものです。コントロールすることはできませんが、毛周期を知っておくことでリペアのタイミングを計画しやすくなります。</p><p>毛周期とリペアの関係については、<a href="/matsuge-extension-mou-shuki/">まつげエクステと毛周期の関係を知るとリペアのタイミングがわかる</a>で詳しく解説していますので、あわせてご覧ください。</p><h2 id="sec-4">原因③｜グルーの硬化不足と接着の安定性</h2><p>グルー（接着剤）の硬化が不十分だと、持ちが大きく落ちます。一般的なマツエクで使われるグルーは、空気中の水分と反応して硬化するタイプが多く、温度・湿度・施術直後の水や蒸気への接触に影響を受けやすい特性があります。</p><p>施術後すぐに洗顔や入浴をすると、硬化が妨げられる場合があるため、多くのサロンでは「4〜6時間は水に濡らさないように」と案内しています。</p><p>グルーの種類や硬化方式はサロンによって異なります。どのような接着剤を使っているか、施術後の制限はどのくらいあるかを確認しておくと、サロンを選ぶときの参考になります。</p><h2 id="sec-5">原因④｜生活習慣・スキンケアの影響</h2><p>日常生活の中にも、持ちを左右する習慣が潜んでいます。代表的なものをまとめました。</p><div class="tw"><table><thead><tr><th>習慣・行動</th><th>影響</th></tr></thead><tbody><tr><td>まつ毛を触る・こする</td><td>物理的な摩擦でエクステが外れやすくなる</td></tr><tr><td>うつ伏せで寝る</td><td>枕との摩擦で取れやすくなる</td></tr><tr><td>油分の多いクレンジング</td><td>接着部分を溶かしやすく、持ちが落ちやすい</td></tr><tr><td>アイメイクを強くこすって落とす</td><td>早期脱落の原因になりやすい</td></tr><tr><td>汗・水・サウナなど</td><td>グルーの状態に影響する場合がある</td></tr></tbody></table></div><p>クレンジングは「マツエクに使えるもの」として販売されているものでも、油分の含有量に差があります。アイメイクをオフする際は、コットンでこすらずコットンをまぶたに押し当てて浸透させるような方法が一般的です。</p><p>汗やジムでの運動が持ちに与える影響については、<a href="/matsuge-extension-gym-ase/">マツエク中でもジムに通える？汗・摩擦・水濡れの影響と対策を解説</a>も参考にしてみてください。</p><h2 id="sec-6">取れやすい時期はある？季節・体調との関係</h2><p>「季節によって取れやすさが変わる気がする」という声は少なくありません。夏場は汗や皮脂の分泌が増えることで、グルーの接着が不安定になりやすい傾向があります。</p><p>また、ホルモンバランスの変化が自まつ毛の状態に影響する場合もあり、体調不良や睡眠不足が続くとまつ毛が抜けやすくなることも考えられます。</p><p>ただし、これらはあくまで傾向であり、個人差が大きいものです。「最近取れやすい」と感じたときは、季節や体調の変化もひとつの要因として念頭に置いておくとよいかもしれません。</p><h2 id="sec-7">「取れやすい」を改善するサロン選びの3つの視点</h2><p>原因がわかったところで、次はサロン選びの視点を整理しておきましょう。</p><h3>1. カウンセリングで原因を特定してくれるか</h3><p>「取れやすい」という悩みに対して、過去のトラブル・生活習慣・自まつ毛の状態を丁寧に聞いてくれるサロンかどうかは大きな判断基準です。ホットペッパーの口コミでは、他店での仕上がりや持ちへの不満から来店した方が多い傾向があります。それだけ、最初のカウンセリングの質が満足度に直結しているということです。</p><h3>2. グルーの硬化方式や素材を説明してくれるか</h3><p>使用するグルーの種類、硬化の仕組み、施術後の制限について説明があるかどうかを確認してみましょう。透明性のある説明ができるサロンは、施術への信頼感にもつながります。</p><h3>3. 下向きまつ毛など生え方の悩みに対応できるか</h3><p>自まつ毛の生え方による持ちへの影響に対して、まつげパーマで向きを整えてから装着するメニュー（パリエクなど）があるかどうかも確認のポイントです。下向きまつ毛・左右差の悩みが来店動機として挙がりやすい傾向があることからも、生え方への対応力はサロン選びで見ておきたい点です。</p><h2 id="sec-8">TOHITOのカウンセリングで「取れやすい」原因を特定するプロセス</h2><p>ここからは、堺市三国ヶ丘にあるLEDエクステ専門サロン「TOHITO（トヒト）」での対応について紹介します。</p><p>TOHITOでは、カウンセリングで必ず確認する3点があります。</p><ul><li>過去のトラブル（取れやすかった経験や皮膚トラブルの有無など）</li><li>仕上がりのイメージ</li><li>施術に求めていること</li></ul><p>「取れやすい」というご相談があった際には、まず「エクステだけが取れているのか、自まつ毛ごと抜けているのか」を確認します。この一点を聞くだけで、原因が接着の問題なのか、毛周期や自まつ毛の状態の問題なのかをある程度切り分けることができます。</p><p>完全個室のため、他のお客様を気にせず話せる環境です。写真や図を見ながら仕上がりのイメージをすり合わせたり、生活習慣について気兼ねなく話したりすることができます。</p><h3>下向きまつ毛にはパリエクという選択肢がある</h3><p>下向きに生えているまつ毛には、まつげパーマで向きを整えてからLEDフラットラッシュを装着する「パリエク」で対応することができます。まずまつ毛の向きを上向きに整えることで、エクステが重力方向に引っ張られにくくなり、持ちの改善につながりやすい施術です。</p><p>パリエクは100本／120本／140本／つけ放題の4種類から選べます。</p><h2 id="sec-9">TOHITOのLEDエクステが「持ちがいい」と評価される理由</h2><p>TOHITOはLEDエクステ専門サロンです。LEDエクステとは、LED光を照射してグルーを硬化させる方式のエクステのことで、接着が安定しやすいのが特長のひとつです。</p><p>持ちの目安は4週間。さらに、施術当日から洗顔・入浴・運動・サウナ・プール・アイメイクが可能なため、一般的なマツエクで設けられる施術後の制限がほとんどありません。生活習慣を変えずにそのまま過ごせることが、持ちへのストレスを減らすことにもつながります。</p><p>ホットペッパーの口コミは90件・総合評価4.96（執筆時点）。持ちの良さとカウンセリングの丁寧さが繰り返し評価されている傾向があります。</p><p>リピーターの方は、4週間以内の来店であればオフ代が無料になる仕組みがあります。これにより、定期的なリペアのサイクルが組みやすくなっています。</p><h2 id="sec-10">まずはカウンセリングで相談してみませんか</h2><p>「取れやすい」という悩みは、原因によって対策がまったく異なります。自まつ毛の状態なのか、生活習慣なのか、グルーとの相性なのか——自分ひとりで判断するのはなかなか難しいものです。</p><p>まずはカウンセリングで話してみることが、解決の第一歩になります。</p><p>TOHITOの初回カウンセリングは5〜10分。当日予約にも対応しています。南海高野線・JR阪和線 三国ヶ丘駅 西口から徒歩2分。完全個室・女性専用のサロンです。</p><p>ご料金・空き状況はホットペッパービューティーからご確認いただけます。</p><p><a href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金はこちら</a></p></div>
@@ -168,18 +179,21 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <a class="btn" href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金を見る</a>
     </div>
     <div class="related"><div class="ttl">あわせて読みたい</div><div class="cards"><a href="/hybrid-lash-dokode-dekiru-tohito/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュはどこでできる？TOHITOオリジナルメニューを解説</div>
 <div class="d">「ハイブリッドラッシュはどこでできる？」と探している方へ。上まつげエクステ×下まつげパーマの組み合わせが叶うTOHITOオリジナルメニューの内容・向いている人・来店の流れをまとめました。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-led-extension-under-perm-detail/" data-cat="まつげエクステ">
-<span class="tag">まつげエクステ</span>
-<div class="t">ハイブリッドラッシュとは？上エクステ×下パーマの組み合わせを細かく解説</div>
-<div class="d">ハイブリッドラッシュ（上マツエク＋下まつげパーマ）の仕組み・持ち・向いている人・サロン選びのポイントをやさしく解説。「盛りすぎず、物足りなくない」大人の目元を叶える組み合わせです。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュとは？上まつ毛エクステ×下まつ毛パーマの組み合わせを解説</div>
 <div class="d">ハイブリッドラッシュとは何か、どんな仕上がりになるのかを解説。上まつ毛にLEDエクステ、下まつ毛にパーマを組み合わせたTOHITOオリジナルメニューの特徴と向いている人を分かりやすく説明します。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a></div></div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/matsuge-extension-jikan-quality-salon/" data-cat="まつげエクステ">
+
+<span class="tag">まつげエクステ</span>
+<div class="t">マツエクの所要時間はどれくらい？サロン選びで変わる時間とクオリティの話</div>
+<div class="d">マツエクの施術時間はサロンによってなぜ違うのか。本数・メニュー・グルーの種類・カウンセリングの有無など、時間に影響する要素を整理し、時間とクオリティのバランスでサロンを選ぶ考え方を解説します。</div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月9日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a></div></div>
   </article>
 </div>
 <footer class="site"><div class="wrap">

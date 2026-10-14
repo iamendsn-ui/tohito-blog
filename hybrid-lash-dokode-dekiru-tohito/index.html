@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://blog.tohitoeyelash.beauty/hybrid-lash-dokode-dekiru-tohito/">
 <meta property="og:site_name" content="TOHITO">
 <meta property="og:locale" content="ja_JP">
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#332C27">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap">
@@ -62,8 +63,10 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .cards{display:grid;gap:16px}
 .cards a{
   display:block;background:var(--card);border-radius:14px;padding:22px 22px 20px;
-  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;
+  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s;overflow:hidden;
 }
+.cards a.has-thumb{padding-top:0}
+.cards a .thumb{display:block;width:calc(100% + 44px);max-width:none;margin:0 -22px 18px;aspect-ratio:16/9;object-fit:cover;background:var(--wash)}
 .cards a:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(90,66,44,.1)}
 .cards a[hidden]{display:none}
 .tag{
@@ -93,6 +96,8 @@ article h1{
 }
 .byline{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:6px}
 .byline .meta{margin-top:12px}
+figure.cover{margin:26px 0 0}
+figure.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:var(--wash)}
 
 .toc{background:var(--card);border-radius:14px;box-shadow:var(--shadow);padding:22px 26px;margin:32px 0 42px}
 .toc .ttl{font-family:"Shippori Mincho",serif;font-size:14px;letter-spacing:.16em;color:var(--ink-sub);text-align:center;margin-bottom:14px}
@@ -112,6 +117,9 @@ article h1{
 .body li::marker{color:var(--accent)}
 .body strong{font-weight:700;background:linear-gradient(transparent 64%,var(--wash) 64%)}
 .body blockquote{margin:0 0 26px;padding:2px 0 2px 18px;border-left:2px solid var(--pill);color:var(--ink-sub)}
+.body figure.ph{margin:6px 0 30px}
+.body figure.ph img{display:block;width:100%;border-radius:12px;background:var(--wash)}
+.body figure.ph figcaption{font-size:12.5px;color:var(--ink-faint);text-align:center;margin-top:9px;line-height:1.7;letter-spacing:.03em}
 .tw{overflow-x:auto;margin:0 0 28px;background:var(--card);border-radius:12px;box-shadow:var(--shadow)}
 .body table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.8}
 .body th,.body td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
@@ -138,6 +146,8 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
   body{font-size:15px;line-height:1.95}
   .filters button{padding:9px 18px;font-size:13px}
   .cards a{padding:20px 18px 18px}
+  .cards a.has-thumb{padding-top:0}
+  .cards a .thumb{width:calc(100% + 36px);margin:0 -18px 16px}
   .cards .t{font-size:17px}
   .body h2{font-size:18.5px;margin-top:48px}
   .cta{padding:28px 20px}
@@ -159,6 +169,7 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <span class="tag" style="margin-top:18px;display:inline-block">まつげエクステ</span>
       <h1>ハイブリッドラッシュはどこでできる？TOHITOオリジナルメニューを解説</h1>
       <div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div>
+      
     </div>
     <nav class="toc"><div class="ttl">目 次</div><ol><li><a href="#sec-1">ハイブリッドラッシュとは？組み合わせの基本をおさらい</a></li><li><a href="#sec-2">「上は華やかに、下は自然に」したい理由</a></li><li><a href="#sec-3">下まつげをエクステではなくパーマにするメリット</a></li><li><a href="#sec-4">ハイブリッドラッシュは一般サロンで受けられる？</a></li><li><a href="#sec-5">TOHITOのハイブリッドラッシュはオリジナルメニューです</a></li><li><a href="#sec-6">TOHITOのハイブリッドラッシュが向いている人</a></li><li><a href="#sec-7">TOHITOのカウンセリングと施術の流れ</a></li><li><a href="#sec-8">TOHITOで受けるときに知っておきたいこと</a></li><li><a href="#sec-9">まとめ</a></li></ol></nav>
     <div class="body"><h2 id="sec-1">ハイブリッドラッシュとは？組み合わせの基本をおさらい</h2><p>「ハイブリッドラッシュ」という言葉を聞いたことはあっても、実際にどんな施術なのかイメージしにくい、という方は多いかもしれません。</p><p>一般的に使われるときは、上まつげにエクステ、下まつげにまつげパーマをかける組み合わせを指します。上で華やかさを出しながら、下は自まつげを整えるだけなので、自然な仕上がりになるのが特徴です。</p><p>上下ともにエクステほど盛らず、かといって上だけエクステより完成度が上がる。その絶妙なバランスが「大人の目元に求められる華やかさ」として、じわじわと注目を集めています。</p><p>詳しい仕組みについては、<a href="/blog//blog/hybrid-lash-led-extension-under-perm-detail">ハイブリッドラッシュとは？上エクステ×下パーマの組み合わせを細かく解説</a>にまとめています。気になる方はあわせてご覧ください。</p><h2 id="sec-2">「上は華やかに、下は自然に」したい理由</h2><p>目元の印象は、多くの場合、上まつげが担っています。カールやボリューム、長さで目の開きが変わり、顔全体の雰囲気にも影響します。</p><p>一方、下まつげを盛りすぎると、派手な印象や、どこか夜っぽい雰囲気になりやすいという声はサロンでもよく耳にします。仕事でもプライベートでも浮かない、ちょうどいいバランスを求めているからこそ、下は抑えたいというお気持ちは自然なことだと思います。</p><p>引き算メイクのトレンドともぴったり合致するこのバランス感覚。「盛っている感を出さずに、でも手を抜いていない目元」を目指すなら、上下で異なるアプローチをとる組み合わせは、理にかなった選択です。</p><h2 id="sec-3">下まつげをエクステではなくパーマにするメリット</h2><p>下まつげのエクステと聞くと、「派手になりそう」「なんだか痛そう」「目に入らないか心配」と感じる方が少なくありません。実際にサロンでも、そういった抵抗感から下まつげは自然のままにしているお客様が多くいらっしゃいます。</p><p>そんな方に選ばれているのが、下まつげへのパーマです。エクステを足すのではなく、自まつげの向きを整えるだけなので、違和感が出にくいのが一番の理由として挙げられます。</p><p>また、下まつげは涙や洗顔の影響を受けやすく、エクステが取れやすいことへの心配もよく聞かれます。パーマであれば持ちへの不安が少なく、毎日のケアも気軽です。</p><div class="tw"><table><thead><tr><th>悩み</th><th>パーマで解決できること</th></tr></thead><tbody><tr><td>下向き・内向きに生えている</td><td>自然な方向に整えられる</td></tr><tr><td>バラバラで揃わない</td><td>ロッドで均一に整えられる</td></tr><tr><td>マスカラが面倒</td><td>省けるケースがある</td></tr><tr><td>下を盛りすぎたくない</td><td>エクステより自然な仕上がりになる</td></tr><tr><td>エクステが取れやすいのが心配</td><td>パーマなら持ちへの不安が少ない</td></tr></tbody></table></div><p>下まつげがしっかりある方は、足すより整えた方が似合うケースも多くあります。<a href="/blog//blog/shitamuki-matsuge-matsuke-taisaku">下向きまつげにマツエクをつけるコツと、向きを整える対策とは</a>も参考にしてみてください。</p><h2 id="sec-4">ハイブリッドラッシュは一般サロンで受けられる？</h2><p>「ハイブリッドラッシュ」という名称は、サロンによって指す内容が異なることがあります。上下エクステの素材を組み合わせた施術を「ハイブリッド」と呼ぶサロンもあれば、別の意味で使っているケースもあります。</p><p>「上エクステ×下パーマ」の組み合わせをひとつのメニューとして明確に設定しているサロンは、まだ多くはないのが現状です。受けてみたいと思ったときは、事前に内容を確認することをおすすめします。</p><p>また、上まつげのエクステにLEDグルーを使っているかどうかによって、施術後の制限（洗顔・入浴・運動など）が変わります。組み合わせメニューとして案内されていても、詳細の確認が大切です。</p><h2 id="sec-5">TOHITOのハイブリッドラッシュはオリジナルメニューです</h2><p>TOHITOでは、上まつげにLEDフラットラッシュ、下まつげにまつげパーマをかける組み合わせを「ハイブリッドラッシュ」としてオリジナルメニューに設定しています。</p><p>TOHITOはLEDエクステ専門サロンです。上まつげの固定にはLEDグルーを使用するため、施術当日から洗顔・入浴・運動が可能です。夜お風呂に入れない、翌日まで洗顔を控えるといった制限がないのは、毎日の生活リズムを崩したくない方にとってうれしいポイントです。</p><p>下まつげのパーマは、30種類以上のロッドを使い分け、目元分析5ステップで一人ひとりの目元に合わせて設計します。<a href="/blog//blog/matsuge-perm-rod-erabi-kata">まつげパーマのロッド選びで仕上がりが変わる理由と設計の仕組み</a>でも詳しく解説していますが、ロッドの選び方ひとつで仕上がりは大きく変わります。</p><p>上と下がひとつの目元としてまとまって見えるバランスを設計することを大切にしているのが、TOHITOのハイブリッドラッシュの考え方です。</p><h2 id="sec-6">TOHITOのハイブリッドラッシュが向いている人</h2><p>以下のような方に特に選ばれています。</p><ul><li>上は華やかにしたいが、下は自然な仕上がりにしたい</li><li>下まつげエクステへの抵抗があるが、下もきれいに整えたい</li><li>下向き・内向き・バラバラな下まつげが気になっている</li><li>上下エクステよりも手軽に、上だけより完成度を上げたい</li><li>仕事でもプライベートでも違和感のない目元にしたい</li><li>朝の下まつげマスカラの手間をなくしたい</li></ul><p>「なんとなく物足りないけど、盛りすぎたくない」という、そのちょうど間を求めている方に向いている組み合わせです。</p><h2 id="sec-7">TOHITOのカウンセリングと施術の流れ</h2><p>TOHITOでは、新規のお客様向けのすべてのメニューにカウンセリングが付いています。特定のクーポンだけの特典ではなく、初めてご来店の方全員に行っています。</p><p>カウンセリングで必ず確認する3つのことがあります。</p><ol><li><strong>過去のトラブル</strong>　アレルギーや目元への影響など、以前の施術で気になったことがあればお聞きします</li><li><strong>仕上がりのイメージ</strong>　どんな目元にしたいか、画像やイラストを見ながらすり合わせます</li><li><strong>施術に求めていること</strong>　長さ・カール・自然さのバランスなど、優先したいことを確認します</li></ol><p>TOHITOは完全個室のため、周囲を気にせず画像を見せながら話せます。「なんとなくこんな感じ」というふわっとしたイメージでも、言葉に整理しながら進めることができます。</p><p>カウンセリング込みの所要時間は、1時間〜1時間半が目安です。施術後は当日から洗顔・入浴・運動が可能なので、そのまま夜の予定にも影響しません。</p><h2 id="sec-8">TOHITOで受けるときに知っておきたいこと</h2><h3>アクセスと駐車場</h3><p>南海高野線・JR阪和線の三国ヶ丘駅 西口から徒歩2分です。電車でもお車でもアクセスしやすく、近隣にはコインパーキングもあります。</p><h3>女性専用・個室・少人数</h3><p>完全個室・女性専用のサロンです。2席2名体制の少人数で運営しているため、落ち着いた環境で施術を受けられます。</p><p>2名以上でのご来店も可能です。お友達と一緒に予約したい方もお気軽にどうぞ。当日予約にも対応しています。</p><h3>お支払い方法</h3><p>Visa・Mastercard・JCB・American Expressのほか、PayPay・楽天ペイ・iD・交通系ICカード・現金に対応しています。</p><h3>アレルギーへの対応</h3><p>LEDエクステ専門サロンですが、紫外線アレルギーの方には通常グルーでの対応も可能です。グルーのアレルギーが心配な方も、まずご相談ください。</p><h2 id="sec-9">まとめ</h2><p>ハイブリッドラッシュという名称は複数のサロンで使われていますが、TOHITOの「ハイブリッドラッシュ」は、上まつげLEDフラットラッシュ×下まつげパーマのオリジナルメニューです。</p><p>「盛りすぎない、でも物足りなくない」目元を、LEDエクステの施術当日から使える自由さと、30種類以上のロッドによる下まつげパーマの設計力で叶えます。</p><p>上下の仕上がりのバランスまで含めてカウンセリングで整理するので、「なんとなくこうなりたい」を持ってきていただくだけで大丈夫です。</p><p>ご料金・空き状況はホットペッパービューティーからご確認いただけます。</p><p><a href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金はこちら</a></p></div>
@@ -167,19 +178,22 @@ footer.site a{color:var(--ink-sub);text-decoration:none}
       <p class="sub">ご料金と空き状況は、ホットペッパービューティーからご確認いただけます。<br>はじめての方もカウンセリングからご案内します。</p>
       <a class="btn" href="https://beauty.hotpepper.jp/kr/slnH000800474/" target="_blank" rel="noopener">ご予約・ご料金を見る</a>
     </div>
-    <div class="related"><div class="ttl">あわせて読みたい</div><div class="cards"><a href="/hybrid-lash-led-extension-under-perm-detail/" data-cat="まつげエクステ">
-<span class="tag">まつげエクステ</span>
-<div class="t">ハイブリッドラッシュとは？上エクステ×下パーマの組み合わせを細かく解説</div>
-<div class="d">ハイブリッドラッシュ（上マツエク＋下まつげパーマ）の仕組み・持ち・向いている人・サロン選びのポイントをやさしく解説。「盛りすぎず、物足りなくない」大人の目元を叶える組み合わせです。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+    <div class="related"><div class="ttl">あわせて読みたい</div><div class="cards"><a href="/hybrid-lash-toha-led-extension-perm/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">ハイブリッドラッシュとは？上まつ毛エクステ×下まつ毛パーマの組み合わせを解説</div>
 <div class="d">ハイブリッドラッシュとは何か、どんな仕上がりになるのかを解説。上まつ毛にLEDエクステ、下まつ毛にパーマを組み合わせたTOHITOオリジナルメニューの特徴と向いている人を分かりやすく説明します。</div>
 <div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月12日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7分</span></div></a><a href="/matsuge-extension-jikan-quality-salon/" data-cat="まつげエクステ">
+
 <span class="tag">まつげエクステ</span>
 <div class="t">マツエクの所要時間はどれくらい？サロン選びで変わる時間とクオリティの話</div>
 <div class="d">マツエクの施術時間はサロンによってなぜ違うのか。本数・メニュー・グルーの種類・カウンセリングの有無など、時間に影響する要素を整理し、時間とクオリティのバランスでサロンを選ぶ考え方を解説します。</div>
-<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月9日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a></div></div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月9日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a><a href="/matsuge-extension-toreyasui-jiki-kisetsu/" data-cat="まつげエクステ">
+
+<span class="tag">まつげエクステ</span>
+<div class="t">マツエクが取れやすい時期はある？季節と持ちの関係を解説</div>
+<div class="d">「マツエクが季節によって取れやすい気がする」と感じたことはありませんか？秋の気温差や乾燥がグルーに与える影響と、持ちをよくするためのサロン選びのポイントを解説します。</div>
+<div class="meta"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>2026年10月8日</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8分</span></div></a></div></div>
   </article>
 </div>
 <footer class="site"><div class="wrap">
